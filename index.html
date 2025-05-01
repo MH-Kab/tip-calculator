@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <!-- Bootstrap CSS (si tu utilises les classes Bootstrap) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ton fichier CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section id="Calculator-Section" class="bg-light min-vh-100 d-flex justify-content-center align-items-center">
+
+        <div class="container text-center">
+            <h3>Tip Calculator</h3>
+            <p>Enter the bill amount and tip percentage to calculate the total:</p>
+
+            <!-- Utilisation d'un form -->
+            <form id="tip-form" class="d-flex flex-column align-items-center gap-3">
+                <div class="w-100">
+                    <p class="mb-1">Bill Amount</p>
+                    <input id="bill-amount" name="bill-amount" placeholder="Bill Amount" class="form-control js-input" type="number" required>
+                </div>
+
+                <div class="w-100">
+                    <p class="mb-1">Tip Percentage</p>
+                    <input id="tip-percentage" name="tip-percentage" placeholder="Tip Percentage %" class="form-control js-input" type="number" required>
+                </div>
+
+                <button class="btn btn-outline-dark btn-lg rounded-pill mt-3" type="submit">Calculate</button>
+            </form>
+
+            <div id="result" class="mt-4"></div>
+        </div>
+
+    </section>
+
+    <!-- Ton fichier JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
